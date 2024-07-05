@@ -17,8 +17,6 @@ import { ViewTransitions } from 'astro:transitions';
 
 import type { MetaData as MetaDataType } from '~/types';
 
-import { SpeedInsights } from '@vercel/speed-insights/next';
-
 export interface Props {
   metadata?: MetaDataType;
 }
@@ -52,6 +50,5 @@ const { language, textDirection } = I18N;
         content-visibility: auto;
       }
     </style>
-    <SpeedInsights />
   </body>
 </html>
