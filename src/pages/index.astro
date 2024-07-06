@@ -24,28 +24,19 @@ const metadata = {
   <Hero
     actions={[
       {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        // variant: 'primary',
+        text: '瞭解更多',
+        href: '#features',
       },
-      { text: 'Learn more', href: '#features' },
     ]}
     image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
-    <Fragment slot="title">
-      擎橋企業管理諮詢有限公司
-    </Fragment>
+    <Fragment slot="title"> 擎橋企業管理諮詢有限公司 </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+        <span class="font-semibold">擎橋</span> 諮詢總部位於香港，是一家專業從事互聯網、綜合能源高端人才招聘服務的人力資源/企業諮詢服務公司，包括國央企、大型集團公司、上市公司、獨角獸企業及創新企業
+      </span>
     </Fragment>
   </Hero>
 
@@ -57,45 +48,55 @@ const metadata = {
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    title="業務流程"
+    subtitle="提供 360 度全流程服務"
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: '需求分析',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          '與客戶進行深入溝通，了解其招聘需求和職位要求。隨後，獵頭公司會對市場進行調研和分析，確保推薦的候選人符合客戶的期望和企業文化。',
+        icon: 'tabler:number-1-small',
       },
       {
-        title: 'Ready-to-use Components',
+        title: '人才畫像',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          '通過深入了解客戶的需求和岗位要求，結合候選人的職業背景、技能和個性特點，繪製出符合客戶期望的人才畫像，助於精準匹配合適的候選人，提高招聘成功率。',
+        icon: 'tabler:number-2-small',
       },
       {
-        title: 'Best Practices',
+        title: '人才地圖繪製',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          '通過分析行業和市場數據，識別並定位潛在候選人，為客戶提供精準的人才推薦。',
+        icon: 'tabler:number-3-small',
       },
       {
-        title: 'Excellent Page Speed',
+        title: '人才搜尋與挖掘',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          '通過各種渠道（如社交媒體、專業網絡、行業會議等）主動搜尋潛在候選人，對篩選出的候選人進行深入挖掘，包括背景調查、技能評估和面試，確保其符合客戶的職位要求。',
+        icon: 'tabler:number-4-small',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+        title: '人才維護跟進',
+        description: '通過定期與候選人保持聯繫，了解其職業發展動態，並提供職業規劃建議，確保候選人對公司的信任和滿意度。',
+        icon: 'tabler:number-5-small',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: '人才背景調查',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          '核實候選人的學歷和工作經歷，確保信息的真實性。其次進行職業道德和技能評估，以保證候選人與職位要求匹配。',
+        icon: 'tabler:number-6-small',
+      },
+      {
+        title: '人才推薦跟進',
+        description:
+          '根據客戶需求篩選合適的候選人，並進行初步面試和評估；然後，將符合條件的人才推薦給客戶，並持續跟進候選人的面試進展和反饋，確保最終成功匹配。',
+        icon: 'tabler:number-7-small',
+      },
+      {
+        title: '人才入職跟蹤',
+        description:
+          '定期與新員工及其雇主進行溝通，確保雙方滿意並順利融合。此外，還會提供必要的支持和建議，幫助新員工更快適應新環境。',
+        icon: 'tabler:number-8-small',
       },
     ]}
   />
@@ -104,23 +105,22 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    title="業務範圍"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: '中高階人才獵尋',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          '幫助企業招募高級人才、 搜尋、 甄選、 評估、 推薦等服務; 妥善解決少數關鍵人才問題',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: '招聘流程外包',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          '為客戶帶來的價值包含提升招聘策略、優化流程、保障多快好省的招聘結果、靈活應對彈性人才需求等。',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: '靈活用工',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          '針對企業面臨人員編制緊張、 旺季人才短缺、 項用工短缺等難題，針對那些替代性、臨時性、輔助性的崗位、由專業的人力資源服務機構向客戶派駐員工。',
       },
     ]}
     image={{
@@ -129,8 +129,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">為企業提供全方位人才解決方案服務</h3>
     </Fragment>
 
     <Fragment slot="bg">
@@ -138,121 +137,30 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-      },
-      {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }}
-  >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="團隊 TL 介紹"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Belle',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
-        description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+          "深圳辦公室負責人：做互聯網、 金融、 智能製造等行業技術中高端崗位; 有6年以上獵頭從業經驗，過往客戶主要是字節跳動、小紅書、shopee、捷順科技等，成功職位有後台開發負責人，網路研發專家、測試總監、算法負責人；<br/>近 1 年來深耕新能源儲能行業，目前人才庫儲備人才以及能夠交付崗位有：結構電氣、PCS軟硬件、BMS軟件/系統、電力交易算法等，能夠定向公司 mapping。",
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Amanda',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
+          "公司合夥人/TL：專注於職能岗位交付，包括但不限於互聯網行業、地產行業、醫療行業、智能製造業等。主要操作岗位包含HRD、財務總監、法務總監、採購總經理、供應鏈總經理等。擁有10年以上甲乙方招聘經驗。",
+        icon: 'tabler:letter-case',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    title="代表客戶"
+    subtitle="我們為多家業內頭部企業提供了高質量的服務，這些服務涵蓋了廣泛的領域，得到了客戶的一致好評。"
     items={[
       {
         title: 'Headers',
@@ -314,7 +222,7 @@ const metadata = {
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
+    title="業務領域"
     information={`The blog is used to display AstroWind documentation.
                         Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
                         Astro is a very interesting technology. Thanks.
@@ -324,54 +232,43 @@ const metadata = {
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
+    title="我們的優勢"
+    subtitle="提供強大的人才儲備和專業的顧問團隊，專注中高端人才服務，致力於提供靠譜的職業發展建議。"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'KA  為主，專注深耕',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "最大程度盘活中高人才资源，实现点、线、面、圈的人才池联动",
       },
       {
-        title: 'What do I need to start?',
+        title: '強大的人才儲備',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          '專注於中高端人才尋訪及儲備，並實現內部人才資源及時更新共享',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: '百万顧問帶隊',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "顧問均有 5 年以上獵頭 & HR 經驗，經過系統培訓，專業化程度高，交付能力強",
       },
       {
-        title: "What's something that you don't understand?",
+        title: "專注於中高端人才服務",
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-      },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "致力於行業中高人才尋獵，能夠提供專業靠譜的職業發展規劃建議",
       },
     ]}
   />
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
+  <!-- <Stats
     stats={[
       { title: 'Downloads', amount: '132K' },
       { title: 'Stars', amount: '24.8K' },
       { title: 'Forks', amount: '10.3K' },
       { title: 'Users', amount: '48.4K' },
     ]}
-  />
+  /> -->
 
   <!-- CallToAction Widget *********** -->
 
@@ -379,20 +276,19 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'E-Mail',
+        href: 'mailto:belle@acebridge.co',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:mail',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      聯繫我們
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      郵件: belle@acebridge.co<br/>
     </Fragment>
   </CallToAction>
 </Layout>
