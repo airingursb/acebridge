@@ -9,8 +9,9 @@ import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
+// import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Image from 'astro/components/Image.astro';
 
 const metadata = {
   title: 'AceBridge — 擎橋企業管理諮詢有限公司',
@@ -163,54 +164,48 @@ const metadata = {
     subtitle="我們為多家業內頭部企業提供了高質量的服務，這些服務涵蓋了廣泛的領域，得到了客戶的一致好評。"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
+        title: '小红书',
+        imageSrc: '~/assets/images/companys/redbook.png',
       },
       {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
+        title: '字节跳动',
+        imageSrc: '~/assets/images/companys/bytedance.png',
       },
       {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
+        title: 'Shopee',
+        imageSrc: '~/assets/images/companys/shopee.png',
       },
       {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
+        title: '捷顺科技',
+        imageSrc: '~/assets/images/companys/jieshun.png',
       },
       {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
+        title: '星星充电',
+        imageSrc: '~/assets/images/companys/starcharge.png',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
+        title: '科陆电子',
+        imageSrc: '~/assets/images/companys/clou.png',
       },
       {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
+        title: '禾望电气',
+        imageSrc: '~/assets/images/companys/hopewind.png',
       },
       {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
+        title: 'YOTAI',
+        imageSrc: '~/assets/images/companys/yotai.png',
       },
       {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
+        title: '佳智能',
+        imageSrc: '~/assets/images/companys/zoono.png',
+      },
+      {
+        title: '先导智能',
+        imageSrc: '~/assets/images/companys/lead.png',
+      },
+      {
+        title: '亿纬锂电能',
+        imageSrc: '~/assets/images/companys/eve.png',
       },
     ]}
   >
