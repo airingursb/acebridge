@@ -12,6 +12,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 // import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Image from 'astro/components/Image.astro';
+import BusinessIntrodution from '~/components/widgets/BusinessIntrodution.astro';
 
 const metadata = {
   title: 'AceBridge — 擎橋企業管理諮詢有限公司',
@@ -66,8 +67,7 @@ const metadata = {
       },
       {
         title: '人才地圖繪製',
-        description:
-          '通過分析行業和市場數據，識別並定位潛在候選人，為客戶提供精準的人才推薦。',
+        description: '通過分析行業和市場數據，識別並定位潛在候選人，為客戶提供精準的人才推薦。',
         icon: 'tabler:number-3-small',
       },
       {
@@ -78,7 +78,8 @@ const metadata = {
       },
       {
         title: '人才維護跟進',
-        description: '通過定期與候選人保持聯繫，了解其職業發展動態，並提供職業規劃建議，確保候選人對公司的信任和滿意度。',
+        description:
+          '通過定期與候選人保持聯繫，了解其職業發展動態，並提供職業規劃建議，確保候選人對公司的信任和滿意度。',
         icon: 'tabler:number-5-small',
       },
       {
@@ -110,13 +111,11 @@ const metadata = {
     items={[
       {
         title: '中高階人才獵尋',
-        description:
-          '幫助企業招募高級人才、 搜尋、 甄選、 評估、 推薦等服務; 妥善解決少數關鍵人才問題',
+        description: '幫助企業招募高級人才、 搜尋、 甄選、 評估、 推薦等服務; 妥善解決少數關鍵人才問題',
       },
       {
         title: '招聘流程外包',
-        description:
-          '為客戶帶來的價值包含提升招聘策略、優化流程、保障多快好省的招聘結果、靈活應對彈性人才需求等。',
+        description: '為客戶帶來的價值包含提升招聘策略、優化流程、保障多快好省的招聘結果、靈活應對彈性人才需求等。',
       },
       {
         title: '靈活用工',
@@ -130,7 +129,9 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">為企業提供全方位人才解決方案服務</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        為企業提供全方位人才解決方案服務
+      </h3>
     </Fragment>
 
     <Fragment slot="bg">
@@ -138,21 +139,20 @@ const metadata = {
     </Fragment>
   </Content>
 
-
   <Steps
     title="團隊 TL 介紹"
     items={[
       {
         title: 'Belle',
         description:
-          "深圳辦公室負責人：做互聯網、 金融、 智能製造等行業技術中高端崗位; 有6年以上獵頭從業經驗，過往客戶主要是字節跳動、小紅書、shopee、捷順科技等，成功職位有後台開發負責人，網路研發專家、測試總監、算法負責人；<br/>近 1 年來深耕新能源儲能行業，目前人才庫儲備人才以及能夠交付崗位有：結構電氣、PCS軟硬件、BMS軟件/系統、電力交易算法等，能夠定向公司 mapping。",
-        icon: 'tabler:letter-case',
+          '深圳辦公室負責人：做互聯網、 金融、 智能製造等行業技術中高端崗位; 有6年以上獵頭從業經驗，過往客戶主要是字節跳動、小紅書、shopee、捷順科技等，成功職位有後台開發負責人，網路研發專家、測試總監、算法負責人；<br/>近 1 年來深耕新能源儲能行業，目前人才庫儲備人才以及能夠交付崗位有：結構電氣、PCS軟硬件、BMS軟件/系統、電力交易算法等，能夠定向公司 mapping。',
+        imageSrc: '~/assets/images/people/belle.png',
       },
       {
         title: 'Amanda',
         description:
-          "公司合夥人/TL：專注於職能岗位交付，包括但不限於互聯網行業、地產行業、醫療行業、智能製造業等。主要操作岗位包含HRD、財務總監、法務總監、採購總經理、供應鏈總經理等。擁有10年以上甲乙方招聘經驗。",
-        icon: 'tabler:letter-case',
+          '公司合夥人/TL：專注於職能岗位交付，包括但不限於互聯網行業、地產行業、醫療行業、智能製造業等。主要操作岗位包含HRD、財務總監、法務總監、採購總經理、供應鏈總經理等。擁有10年以上甲乙方招聘經驗。',
+        imageSrc: '~/assets/images/people/amanda.png',
       },
     ]}
   />
@@ -216,12 +216,31 @@ const metadata = {
 
   <!-- HighlightedPosts Widget ******* -->
 
-  <BlogLatestPosts
+  <BusinessIntrodution
     title="業務領域"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    information={`我們專注於獵聘互聯網、新能源、汽車電子行業的人才。我們的專業團隊致力於為企業提供高質量的人才解決方案，確保每一個推薦的候選人都能滿足企業的需求，並推動企業的發展。我們深知這些行業的快速變化和技術進步，因此我們不斷更新和擴展我們的候選人數據庫，以確保我們能為客戶提供最新、最合適的人才。`}
+    lists={[
+      {
+        title: '互聯網',
+        items: ['後臺開發', '前臺開發', '算法工程師', '商業化產品', 'CVM 產品', '...'],
+        image: '~/assets/images/business/network.png',
+      },
+      {
+        title: '綜合能源',
+        items: ['DSP 軟件', 'BMS 軟件', 'EMS 軟件', '電氣專家', '結構負責人', '...'],
+        image: '~/assets/images/business/charge.png',
+      },
+      {
+        title: '數位化裝配',
+        items: ['圖像算法', 'CT 重構算法', '海外大客戶總監', 'PM-3C 裝備', '...'],
+        image: '~/assets/images/business/hardware.png',
+      },
+      {
+        title: '硬件驅動',
+        items: ['射頻專家', '嵌入式軟件', '...'],
+        image: '~/assets/images/business/car.png',
+      },
+    ]}
   />
 
   <!-- FAQs Widget ******************* -->
@@ -233,23 +252,19 @@ const metadata = {
     items={[
       {
         title: 'KA  為主，專注深耕',
-        description:
-          "最大程度盘活中高人才资源，实现点、线、面、圈的人才池联动",
+        description: '最大程度盘活中高人才资源，实现点、线、面、圈的人才池联动',
       },
       {
         title: '強大的人才儲備',
-        description:
-          '專注於中高端人才尋訪及儲備，並實現內部人才資源及時更新共享',
+        description: '專注於中高端人才尋訪及儲備，並實現內部人才資源及時更新共享',
       },
       {
         title: '百万顧問帶隊',
-        description:
-          "顧問均有 5 年以上獵頭 & HR 經驗，經過系統培訓，專業化程度高，交付能力強",
+        description: '顧問均有 5 年以上獵頭 & HR 經驗，經過系統培訓，專業化程度高，交付能力強',
       },
       {
-        title: "專注於中高端人才服務",
-        description:
-          "致力於行業中高人才尋獵，能夠提供專業靠譜的職業發展規劃建議",
+        title: '專注於中高端人才服務',
+        description: '致力於行業中高人才尋獵，能夠提供專業靠譜的職業發展規劃建議',
       },
     ]}
   />
@@ -278,12 +293,10 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot="title">
-      聯繫我們
-    </Fragment>
+    <Fragment slot="title"> 聯繫我們 </Fragment>
 
     <Fragment slot="subtitle">
-      郵件: belle@acebridge.co<br/>
+      郵件: belle@acebridge.co<br />
     </Fragment>
   </CallToAction>
 </Layout>

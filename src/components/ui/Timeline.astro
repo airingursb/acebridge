@@ -2,6 +2,7 @@
 import { Icon } from 'astro-icon/components';
 import { twMerge } from 'tailwind-merge';
 import type { Item } from '~/types';
+import Image from '~/components/common/Image.astro';
 
 export interface Props {
   items?: Array<Item>;
@@ -23,11 +24,20 @@ const {
 {
   items && items.length && (
     <div class={containerClass}>
-      {items.map(({ title, description, icon, classes: itemClasses = {} }, index = 0) => (
+      {items.map(({ title, description, icon, imageSrc, classes: itemClasses = {} }, index = 0) => (
         <div class={twMerge('flex', panelClass, itemClasses?.panel)}>
           <div class="flex flex-col items-center mr-4 rtl:mr-0 rtl:ml-4">
             <div>
               <div class="flex items-center justify-center">
+                {imageSrc && (
+                  <Image
+                    src={imageSrc}
+                    alt={title}
+                    width={86}
+                    layout={'fixed'}
+                    class={'max-w-[86px]'}
+                  />
+                )}
                 {(icon || defaultIcon) && (
                   <Icon
                     name={icon || defaultIcon}
